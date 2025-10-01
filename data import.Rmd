@@ -1,6 +1,8 @@
 ---
 title: "Data Import"
 output: github_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup}
@@ -16,6 +18,29 @@ litters_df = read_csv("./data/FAS_litters.csv")
 litters_df = janitor::clean_names(litters_df)
 ```
 
-
 ## Take a look at the data
+
+Printing in the console.
+
+```{r}
+litters_df
+```
+
+```{r}
+head(litters_df)
+```
+
+```{r}
+tail(litters_df)
+```
+
+```{r}
+skimr::skim(litters_df)
+```
+
+
+
+
+
+
 
