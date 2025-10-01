@@ -7,5 +7,12 @@ editor_options:
 
 ```{r setup}
 library(tidyverse)
-
 ```
+
+## Load in the FAS litters Data
+
+```{r}
+litters_df = read_csv("./data/FAS_litters.csv")
+littres_df = janitor::clean_names(litters_df)
+```
+
